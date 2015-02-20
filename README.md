@@ -2,14 +2,14 @@
 
 author: Bruce Curbo								Date: 2/20/2015
 
-this script prepares accelerometer data for future analysis.
+This script prepares accelerometer data for future analysis.
 
 This data set came from the USCI Machine Learning Repository.
 
-the original authors and data sets can be found at
+The original authors and data sets can be found at
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones#
 
-There are 5 data set types using in this project
+There are 5 data set types used in this project
 * Activity_Labels
     this file contains the description of the activities performed by the subjects
 * Subject_test and Subject_train
@@ -23,7 +23,7 @@ There are 5 data set types using in this project
     
 ## Approach
 
-these four data sets had no column headers or indexes to directly link the tables.
+These four data sets had no column headers or indexes to directly link the tables.
 the linkage that was defined was the row numbers in the data sets
  (subject_test/train, X_test/train , features).
     
@@ -32,7 +32,7 @@ the linkage that was defined was the row numbers in the data sets
  * Read in subject_test.txt file
  * Read in subject_train.txt file
  * Read in features.txt file
- * read in X_test.txt file
+ * Read in X_test.txt file
  * Read in X_train.txt file
  * Read in Y_test.txt file
  * Read in Y_train.txt file 
@@ -42,8 +42,9 @@ the linkage that was defined was the row numbers in the data sets
  * Merge the activity Labels to the result sets (X_test, X_train) to get the activity name
  * Combine the rows of the X_test and X_train data to generate a combined test data set
  
+ 
  Given then a combined data, the following steps occurred
- * select the specific columns desired (all mean and std named columns, along with subject and activity name
+ * Select the specific columns desired (all mean and std named columns, along with subject and activity name
  * Place this into a new data frame and update the column names for all columns
  * Summarize the data by Activity.Name and Subject.Num
  * From this summary, generate the average of each of the mean and std columns
