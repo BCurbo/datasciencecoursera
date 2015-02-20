@@ -41,6 +41,10 @@ For each record in the dataset it is provided:
 * Its activity label. 
 * An identifier of the subject who carried out the experiment.
 
+For all columns (except Activity.Name and Subject.Num), all values are the mean of the 
+summarized data. Summarization was at the Activity.Num Subject.Num level.
+
+
 The columns provided are
 * Activity.Name
 * Subject.Num
